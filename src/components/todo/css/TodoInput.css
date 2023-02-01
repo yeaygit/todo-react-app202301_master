@@ -1,0 +1,56 @@
+
+.todo-input {
+    background: #eee;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    padding: 32px 32px 72px;
+    box-sizing: border-box;
+}
+
+.todo-input input {
+    border: 1px solid #94989b;
+    font-size: 18px;
+    border-radius: 4px;
+    width: 100%;
+    padding: 12px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.begin-btn {
+    background: #38d9a9;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    font-size: 60px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 50%;
+    bottom: -5%;
+    transform: translate(-50%, 0);
+    z-index: 10;
+
+    cursor: pointer;
+    /* 애니메이션 지연효과 */
+    transition: 0.2s;
+}
+
+.begin-btn:hover {
+    background: #63e6be;
+}
+
+.begin-btn.open {
+    background: #ff6b6b;
+    transform: translate(-50%, 0) rotate(45deg);
+}
+.begin-btn.open:hover {
+    background: #ff8787;
+}

@@ -1,0 +1,35 @@
+
+.todo-template {
+    width: 512px;
+    height: 768px;
+    /* border: 1px solid #000; */
+    border-radius: 16px;
+
+    /* 음영처리 */
+    /*   x축, y축, 블러크기, 색상 */
+    box-shadow: 0 0 8px #aaa;
+
+    /* 박스 x축 중앙 정렬 : 마진 좌우값을 auto로 설정 */
+    margin: 200px auto 100px;
+
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+/* 로딩중 style */
+.loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+}
+.loading .spinner-border {
+    width: 200px;
+    height: 200px;
+    --bs-spinner-border-width: 1.5rem;
+}
+.loading .text-danger {
+    color: rgba(13, 245, 245, 0.767) !important;
+}

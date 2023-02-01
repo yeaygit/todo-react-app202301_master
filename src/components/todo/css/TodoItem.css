@@ -1,0 +1,68 @@
+
+.todo-item {
+    display: flex;
+    /* border: 1px solid #000; */
+    padding: 12px 0;
+    align-items: center;
+    height: 55px;
+    box-sizing: border-box;
+}
+.todo-item .check-circle {
+    width: 32px;
+    height: 32px;
+    /* 원만들기 */
+    border-radius: 50%; 
+    font-size: 24px;
+    border: 1px solid #9da1a7;
+
+    /* 텍스트 정중앙 배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+.todo-item .check-circle.active {
+    border-color: #38d9a9;
+    color: #38d9a9;
+}
+
+
+.todo-item .text {
+    font-size: 21px;
+    color: #495057;
+    flex: 1;
+}
+
+.todo-item .text.finish {
+    color: #919396;
+    text-decoration: line-through;
+}
+
+.todo-item .modify,
+.todo-item .remove {
+    font-size: 28px;
+    color: #ccc;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 10px;
+    display: none;
+}
+.todo-item:hover .modify,
+.todo-item:hover .remove {
+    display: block;
+}
+
+.todo-item .remove:hover {
+    color: #f51b4f;
+}
+.todo-item .modify:hover {
+    color: #cdf51b;
+}
